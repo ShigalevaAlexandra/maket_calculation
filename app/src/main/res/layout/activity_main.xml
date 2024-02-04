@@ -35,6 +35,7 @@
         android:gravity="right"
         android:paddingRight="8dp"/>
 
+    <!--Разделители клавиш-->
     <View
         android:layout_width="440dp"
         android:layout_height="3dp"
