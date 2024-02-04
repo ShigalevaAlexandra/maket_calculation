@@ -4,7 +4,7 @@
         <item name="cornerRadius">8dp</item>
         <item name="android:layout_width">90dp</item>
         <item name="android:layout_height">65dp</item>
-        <item name="android:textSize">30dp</item>
+        <item name="android:textSize">30sp</item>
         <item name="android:fontFamily">@font/palatinolinotype_bold</item>
         <item name="android:layout_marginBottom">10dp</item>
         <item name="android:layout_marginLeft">15dp</item>
@@ -14,7 +14,7 @@
         <item name="cornerRadius">8dp</item>
         <item name="android:layout_width">78dp</item>
         <item name="android:layout_height">50dp</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:fontFamily">@font/palatinolinotype_bold</item>
         <item name="android:layout_marginBottom">5dp</item>
         <item name="android:layout_marginLeft">15dp</item>

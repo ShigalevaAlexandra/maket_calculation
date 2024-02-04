@@ -17,31 +17,33 @@
         android:background="@color/screen_color"
         android:text="37,0062554"
         android:fontFamily="@font/palatinolinotype_bold"
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:gravity="top"
-        android:paddingLeft="8dp"/>
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
 
     <TextView
         android:id="@+id/calc_screen_primer"
         android:layout_width="match_parent"
         android:layout_height="76dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginTop="116dp"
         android:background="@color/screen_color"
         android:text="3*3/8+66*4/7-√(42*2/25)"
         android:fontFamily="@font/palatinolinotype_bold"
-        android:textSize="50dp"
-        android:gravity="right"
-        android:paddingRight="8dp"/>
+        android:textSize="50sp"
+        android:gravity="end"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
 
     <!--Разделители клавиш-->
     <View
         android:layout_width="440dp"
         android:layout_height="3dp"
         android:layout_marginTop="478dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="135dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="135dp"
         android:background="@color/btn_func_color"
         android:rotation="90"/>
 
@@ -49,8 +51,8 @@
         android:layout_width="280dp"
         android:layout_height="3dp"
         android:layout_marginTop="475dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="355dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="355dp"
         android:background="@color/btn_func_color" />
 
     <!--Кнопки-->
@@ -69,7 +71,7 @@
             style="@style/style_calc_btn"
             android:layout_row="0"
             android:layout_column="0"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:backgroundTint="@color/btn_C_color"
             android:text="C" />
 
@@ -78,7 +80,7 @@
             style="@style/style_calc_btn"
             android:layout_row="1"
             android:layout_column="0"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:backgroundTint="@color/btn_plus_minus_color"
             android:text="+/-" />
 
@@ -87,7 +89,7 @@
             style="@style/style_calc_btn"
             android:layout_row="2"
             android:layout_column="0"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:backgroundTint="@color/btn_func_color"
             android:text="√"
             android:textColor="@color/btn_text_black" />
@@ -97,18 +99,18 @@
             style="@style/style_calc_btn"
             android:layout_row="3"
             android:layout_column="0"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:backgroundTint="@color/btn_func_color"
             android:text="x^y"
             android:textColor="@color/btn_text_black"
-            android:textSize="25dp" />
+            android:textSize="25sp" />
 
         <Button
             android:id="@+id/btn_procent"
             style="@style/style_calc_btn"
             android:layout_row="4"
             android:layout_column="0"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:backgroundTint="@color/btn_func_color"
             android:text="%"
             android:textColor="@color/btn_text_black" />
@@ -120,7 +122,7 @@
             android:layout_row="5"
             android:layout_column="0"
             android:layout_columnSpan="1"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:backgroundTint="@color/btn_func_color"
             android:text="+"
             android:textColor="@color/btn_text_black" />
@@ -280,9 +282,9 @@
         android:id="@+id/calc_button_small_I"
         android:layout_width="match_parent"
         android:layout_height="218dp"
-        android:layout_marginLeft="370dp"
+        android:layout_marginStart="370dp"
         android:layout_marginTop="255dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
         >
 
@@ -292,7 +294,7 @@
             style="@style/style_calc_small_btn"
             android:layout_row="0"
             android:layout_column="0"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:text="1" />
 
         <Button
@@ -300,7 +302,7 @@
             style="@style/style_calc_small_btn"
             android:layout_row="1"
             android:layout_column="0"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:text="4" />
 
         <Button
@@ -308,7 +310,7 @@
             style="@style/style_calc_small_btn"
             android:layout_row="2"
             android:layout_column="0"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:text="7" />
 
         <Button
@@ -316,7 +318,7 @@
             style="@style/style_calc_small_btn"
             android:layout_row="3"
             android:layout_column="0"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:text="0" />
 
         <!--II ряд-->
@@ -380,9 +382,9 @@
         android:id="@+id/calc_button_small_II"
         android:layout_width="match_parent"
         android:layout_height="218dp"
-        android:layout_marginLeft="370dp"
+        android:layout_marginStart="370dp"
         android:layout_marginTop="485dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
         >
 
@@ -392,7 +394,7 @@
             style="@style/style_calc_small_btn"
             android:layout_row="0"
             android:layout_column="0"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:text="1" />
 
         <Button
@@ -400,7 +402,7 @@
             style="@style/style_calc_small_btn"
             android:layout_row="1"
             android:layout_column="0"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:text="4" />
 
         <Button
@@ -408,7 +410,7 @@
             style="@style/style_calc_small_btn"
             android:layout_row="2"
             android:layout_column="0"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:text="7" />
 
         <Button
@@ -416,7 +418,7 @@
             style="@style/style_calc_small_btn"
             android:layout_row="3"
             android:layout_column="0"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:text="0" />
 
         <!--II ряд-->
@@ -432,7 +434,8 @@
             style="@style/style_calc_small_btn"
             android:layout_row="1"
             android:layout_column="1"
-            android:text="5" />
+            android:text="5"
+            tools:ignore="TextSizeCheck" />
 
         <Button
             android:id="@+id/btn_small_18"
