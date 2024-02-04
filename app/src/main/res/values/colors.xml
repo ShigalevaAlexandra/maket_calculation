@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_color">#292929</color>
+    <color name="screen_color">#D4E7AA</color>
+    <color name="btn_C_color">#A62A2A</color>
+    <color name="btn_plus_minus_color">#6F6057</color>
+    <color name="btn_func_color">#D0D0D0</color>
+    <color name="btn_text_black">#464646</color>
+    <color name="btn_num_color">#565B5E</color>
+    <color name="btn_result_color">#FE6600</color>
+</resources>

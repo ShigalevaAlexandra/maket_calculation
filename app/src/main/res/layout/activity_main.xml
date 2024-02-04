@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+<!--Монитор калькулятора-->
+    <TextView
+        android:id="@+id/calc_screen_result"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_margin="40dp"
+        android:background="@color/screen_color"
+        android:text="37,0062554"
+        android:fontFamily="@font/palatinolinotype_bold"
+        android:textSize="35dp"
+        android:gravity="top"
+        android:paddingLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/calc_screen_primer"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="116dp"
+        android:background="@color/screen_color"
+        android:text="3*3/8+66*4/7-√(42*2/25)"
+        android:fontFamily="@font/palatinolinotype_bold"
+        android:textSize="50dp"
+        android:gravity="right"
+        android:paddingRight="8dp"/>
+
+    <View
+        android:layout_width="440dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="478dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="135dp"
+        android:background="@color/btn_func_color"
+        android:rotation="90"/>
+
+    <View
+        android:layout_width="280dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="475dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="355dp"
+        android:background="@color/btn_func_color" />
+
+    <!--Кнопки-->
+    <GridLayout
+        android:id="@+id/calc_button"
+        android:layout_width="match_parent"
+        android:layout_height="532dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp">
+
+        <!--I ряд-->
+        <Button
+            android:id="@+id/btn_C"
+            style="@style/style_calc_btn"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginLeft="0dp"
+            android:backgroundTint="@color/btn_C_color"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/btn_plus_minus"
+            style="@style/style_calc_btn"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginLeft="0dp"
+            android:backgroundTint="@color/btn_plus_minus_color"
+            android:text="+/-" />
+
+        <Button
+            android:id="@+id/btn_square_root"
+            style="@style/style_calc_btn"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginLeft="0dp"
+            android:backgroundTint="@color/btn_func_color"
+            android:text="√"
+            android:textColor="@color/btn_text_black" />
+
+        <Button
+            android:id="@+id/btn_degree"
+            style="@style/style_calc_btn"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginLeft="0dp"
+            android:backgroundTint="@color/btn_func_color"
+            android:text="x^y"
+            android:textColor="@color/btn_text_black"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn_procent"
+            style="@style/style_calc_btn"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_marginLeft="0dp"
+            android:backgroundTint="@color/btn_func_color"
+            android:text="%"
+            android:textColor="@color/btn_text_black" />
+
+        <Button
+            android:id="@+id/btn_plus"
+            style="@style/style_calc_btn"
+            android:layout_height="144dp"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:layout_marginLeft="0dp"
+            android:backgroundTint="@color/btn_func_color"
+            android:text="+"
+            android:textColor="@color/btn_text_black" />
+
+        <!--II ряд-->
+        <Button
+            android:id="@+id/btn_1"
+            style="@style/style_calc_btn"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:backgroundTint="@color/btn_num_color"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn_3"
+            style="@style/style_calc_btn"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:backgroundTint="@color/btn_num_color"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btn_5"
+            style="@style/style_calc_btn"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:backgroundTint="@color/btn_num_color"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn_7"
+            style="@style/style_calc_btn"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:backgroundTint="@color/btn_num_color"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn_9"
+            style="@style/style_calc_btn"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:backgroundTint="@color/btn_num_color"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btn_bracket_left"
+            style="@style/style_calc_btn"
+            android:layout_height="70dp"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:layout_gravity="top"
+            android:backgroundTint="@color/btn_num_color"
+            android:text="(" />
+
+        <Button
+            android:id="@+id/btn_minus"
+            style="@style/style_calc_btn"
+            android:layout_height="70dp"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/btn_func_color"
+            android:text="-"
+            android:textColor="@color/btn_text_black" />
+
+        <!--III ряд-->
+        <Button
+            android:id="@+id/btn_2"
+            style="@style/style_calc_btn"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:backgroundTint="@color/btn_num_color"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn_4"
+            style="@style/style_calc_btn"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:backgroundTint="@color/btn_num_color"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn_6"
+            style="@style/style_calc_btn"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:backgroundTint="@color/btn_num_color"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btn_8"
+            style="@style/style_calc_btn"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:backgroundTint="@color/btn_num_color"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn_0"
+            style="@style/style_calc_btn"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:backgroundTint="@color/btn_num_color"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btn_bracket_right"
+            style="@style/style_calc_btn"
+            android:layout_height="70dp"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:layout_gravity="top"
+            android:backgroundTint="@color/btn_num_color"
+            android:text=")" />
+
+        <Button
+            android:id="@+id/btn_multiply"
+            style="@style/style_calc_btn"
+            android:layout_height="70dp"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/btn_func_color"
+            android:text="*"
+            android:textColor="@color/btn_text_black" />
+
+        <Button
+            android:id="@+id/btn_divide"
+            style="@style/style_calc_btn"
+            android:layout_height="70dp"
+            android:layout_row="5"
+            android:layout_column="3"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/btn_func_color"
+            android:text="/"
+            android:textColor="@color/btn_text_black" />
+
+        <Button
+            android:id="@+id/btn_result"
+            style="@style/style_calc_btn"
+            android:layout_width="174dp"
+            android:layout_height="70dp"
+            android:layout_row="5"
+            android:layout_column="4"
+            android:layout_columnSpan="2"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/btn_result_color"
+            android:text="="
+            android:textColor="@color/btn_text_black" />
+
+    </GridLayout>
+
+    <!--Маленькие кнопки I-->
+    <GridLayout
+        android:id="@+id/calc_button_small_I"
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        >
+
+        <!--I ряд-->
+        <Button
+            android:id="@+id/btn_small_1"
+            style="@style/style_calc_small_btn"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginLeft="0dp"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn_small_4"
+            style="@style/style_calc_small_btn"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginLeft="0dp"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn_small_7"
+            style="@style/style_calc_small_btn"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginLeft="0dp"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn_small_0"
+            style="@style/style_calc_small_btn"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginLeft="0dp"
+            android:text="0" />
+
+        <!--II ряд-->
+        <Button
+            android:id="@+id/btn_small_2"
+            style="@style/style_calc_small_btn"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn_small_5"
+            style="@style/style_calc_small_btn"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn_small_8"
+            style="@style/style_calc_small_btn"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn_small_clear"
+            style="@style/style_calc_small_btn"
+            android:layout_width="160dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:text="<--" />
+
+        <!--III ряд-->
+        <Button
+            android:id="@+id/btn_small_3"
+            style="@style/style_calc_small_btn"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btn_small_6"
+            style="@style/style_calc_small_btn"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btn_small_9"
+            style="@style/style_calc_small_btn"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:text="9" />
+
+    </GridLayout>
+
+    <!--Маленькие кнопки II-->
+    <GridLayout
+        android:id="@+id/calc_button_small_II"
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="485dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        >
+
+        <!--I ряд-->
+        <Button
+            android:id="@+id/btn_small_11"
+            style="@style/style_calc_small_btn"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginLeft="0dp"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn_small_14"
+            style="@style/style_calc_small_btn"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginLeft="0dp"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn_small_17"
+            style="@style/style_calc_small_btn"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginLeft="0dp"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn_small_10"
+            style="@style/style_calc_small_btn"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginLeft="0dp"
+            android:text="0" />
+
+        <!--II ряд-->
+        <Button
+            android:id="@+id/btn_small_12"
+            style="@style/style_calc_small_btn"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn_small_15"
+            style="@style/style_calc_small_btn"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn_small_18"
+            style="@style/style_calc_small_btn"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn_small_clear1"
+            style="@style/style_calc_small_btn"
+            android:layout_width="160dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:text="<--" />
+
+        <!--III ряд-->
+        <Button
+            android:id="@+id/btn_small_13"
+            style="@style/style_calc_small_btn"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btn_small_16"
+            style="@style/style_calc_small_btn"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btn_small_19"
+            style="@style/style_calc_small_btn"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:text="9" />
+
+    </GridLayout>
+
+</FrameLayout>
